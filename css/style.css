@@ -69,22 +69,27 @@ body {
   position: relative;
 }
 
-#myMenu li a {
-}
 #myMenu li a b {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: -7px;
+  right: -57px;
   border: solid #000;
   background: #fff;
   padding: 5px 10px;
   border-radius: 30px;
   width: 160px;
   z-index: -1;
+  opacity: 0;
+  transition: 0.4s;
 }
 
 /* 활성화 표시 */
 #myMenu li.active {
   background: pink;
+}
+
+#myMenu li.active a b {
+  opacity: 1;
+  right: -7px;
 }
